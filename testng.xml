@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<listeners>
+	<listener class-name="com.inetBanking.utilities.Listeners" />
+	<listener class-name="com.inetBanking.analyzer.TransFormer" />
+	</listeners>
+	<test  name="Test">
+		<classes>
+			<class name="com.inetBanking.testCases.CreateNewCustomerTest" />
+			<class name="com.inetBanking.testCases.EditcustomerTest" />
+			<class name="com.inetBanking.testCases.DeletecustomerTest"/>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
